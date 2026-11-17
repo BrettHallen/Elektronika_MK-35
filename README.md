@@ -5,7 +5,7 @@ Its initial price was 105 roubles, dropping to 65 roubles in 1981.<br>
 
 The example I have was manufactured in September (09) 1990 and purchased on 2/Nov/1990.<br>
 
-## MF-35 Passport
+## MK-35 Passport
 Summary of the factory passport (паспорт) that came with this unit.
 
 ### This unit
