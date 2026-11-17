@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" font-family="DejaVu Sans, sans-serif">
+  <rect width="1920" height="1080" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="120" y="120" font-size="58" font-weight="bold" fill="#1f2328">USB power cable wiring</text>
+  <text x="120" y="178" font-size="34" fill="#57606a">Elektronika MK-35 · Д2-37К cable → USB 5 V</text>
+
+  <!-- Section headings -->
+  <text x="140" y="275" font-size="40" font-weight="bold" fill="#1f2328">Calculator end</text>
+  <text x="140" y="315" font-size="28" fill="#57606a">Розетка XS2 · ОНП-ВС-18</text>
+  <text x="860" y="275" font-size="40" font-weight="bold" fill="#1f2328">USB end</text>
+  <text x="860" y="315" font-size="28" fill="#57606a">USB-A plug, solder tabs</text>
+
+  <!-- ===== Calculator connector (pin layout as on the MK-35 schematic) ===== -->
+  <rect x="170" y="468" width="320" height="144" rx="22" fill="#ece9e2" stroke="#3b3f45" stroke-width="6"/>
+  <path d="M 210 490 H 450 Q 465 490 465 505 V 540 L 450 545 A 40 40 0 0 1 370 545 A 40 40 0 0 1 290 545 A 40 40 0 0 1 210 545 L 195 540 V 505 Q 195 490 210 490 Z"
+        fill="#ffffff" stroke="#3b3f45" stroke-width="4"/>
+  <!-- Pin numbers, placed as on the schematic -->
+  <text x="150" y="556" font-size="40" font-weight="bold" fill="#1f2328" text-anchor="end">3</text>
+  <text x="510" y="556" font-size="40" font-weight="bold" fill="#1f2328">1</text>
+  <text x="330" y="665" font-size="40" font-weight="bold" fill="#1f2328" text-anchor="middle">2</text>
+
+  <!-- ===== Wires ===== -->
+  <!-- Заряд (white), not connected -->
+  <path d="M 250 530 V 820 Q 250 850 280 850 H 610" fill="none" stroke="#8c959f" stroke-width="26" stroke-linecap="round"/>
+  <path d="M 250 530 V 820 Q 250 850 280 850 H 610" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+  <rect x="600" y="834" width="64" height="32" rx="8" fill="#3b3f45"/>
+  <!-- Общий (red): connector pin 2 → USB pin 1 -->
+  <path d="M 330 530 V 450 Q 330 420 360 420 H 870" fill="none" stroke="#d62828" stroke-width="20" stroke-linecap="round"/>
+  <!-- Работа (blue): connector pin 1 → USB pin 4 -->
+  <path d="M 410 530 V 630 Q 410 660 440 660 H 870" fill="none" stroke="#1f5fbf" stroke-width="20" stroke-linecap="round"/>
+
+  <!-- Contacts drawn over the wire ends -->
+  <g fill="#1f2328">
+    <polygon points="250,514 266,530 250,546 234,530"/>
+    <polygon points="330,514 346,530 330,546 314,530"/>
+    <polygon points="410,514 426,530 410,546 394,530"/>
+  </g>
+
+  <!-- Wire labels -->
+  <text x="560" y="390" font-size="64" font-weight="bold" fill="#d62828">Общий</text>
+  <text x="560" y="740" font-size="64" font-weight="bold" fill="#1f5fbf">Работа</text>
+  <text x="690" y="870" font-size="56" font-weight="bold" fill="#57606a">Заряд</text>
+  <text x="690" y="912" font-size="28" fill="#57606a">n/c: insulate the end</text>
+
+  <!-- ===== USB-A plug ===== -->
+  <rect x="980" y="372" width="180" height="336" fill="#f4f1ea" stroke="#5b6470" stroke-width="4"/>
+  <g stroke="#8a6a00" stroke-width="3" fill="#d9a520">
+    <rect x="860" y="402" width="124" height="36" rx="4"/>
+    <rect x="860" y="482" width="124" height="36" rx="4"/>
+    <rect x="860" y="562" width="124" height="36" rx="4"/>
+    <rect x="860" y="642" width="124" height="36" rx="4"/>
+  </g>
+  <circle cx="885" cy="420" r="17" fill="#b9bec5" stroke="#6b7280" stroke-width="3"/>
+  <circle cx="885" cy="660" r="17" fill="#b9bec5" stroke="#6b7280" stroke-width="3"/>
+  <g font-size="34" font-weight="bold" fill="#1f2328" text-anchor="middle">
+    <text x="1020" y="432">1</text>
+    <text x="1020" y="512">2</text>
+    <text x="1020" y="592">3</text>
+    <text x="1020" y="672">4</text>
+  </g>
+  <rect x="1160" y="352" width="400" height="376" rx="10" fill="#d3d8de" stroke="#5b6470" stroke-width="4"/>
+  <rect x="1290" y="410" width="54" height="54" rx="4" fill="#9aa3ad" stroke="#5b6470" stroke-width="3"/>
+  <rect x="1290" y="616" width="54" height="54" rx="4" fill="#9aa3ad" stroke="#5b6470" stroke-width="3"/>
+  <text x="1460" y="552" font-size="30" fill="#57606a" text-anchor="middle">USB-A</text>
+  <g font-size="34">
+    <text x="1610" y="432" fill="#d62828" font-weight="bold">1  VBUS +5 V</text>
+    <text x="1610" y="512" fill="#8c959f">2  D− (n/c)</text>
+    <text x="1610" y="592" fill="#8c959f">3  D+ (n/c)</text>
+    <text x="1610" y="672" fill="#1f5fbf" font-weight="bold">4  GND</text>
+  </g>
+
+  <!-- ===== Pin-to-pin table (use this if the wire colours differ) ===== -->
+  <g font-size="30">
+    <text x="1160" y="830" font-size="30" font-weight="bold" fill="#1f2328">Connector pin → USB pin</text>
+    <text x="1160" y="880" fill="#d62828">Pin 2  Общий</text>
+    <text x="1500" y="880" fill="#1f2328">→  1  (+5 V)</text>
+    <text x="1160" y="925" fill="#1f5fbf">Pin 1  Работа</text>
+    <text x="1500" y="925" fill="#1f2328">→  4  (GND)</text>
+    <text x="1160" y="970" fill="#57606a">Pin 3  Заряд</text>
+    <text x="1500" y="970" fill="#57606a">→  n/c</text>
+  </g>
+</svg>
